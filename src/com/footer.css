@@ -1,0 +1,160 @@
+.footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Footer container */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Footer Logo */
+.footer-logo img {
+  width: 350px;
+  height: auto;
+  margin-right: 50px;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: 90px;
+  margin: 10px;
+  margin-right: 200px;
+}
+
+.footer-links div {
+  text-align: left;
+}
+
+.footer-links h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Footer Contact */
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  margin-top: 10px;
+  background: #f9f9f9;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.social-icons svg {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons svg:hover {
+  color: #0073e6;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-logo img {
+      width: 250px;
+      margin: 0 auto;
+  }
+
+  .footer-links {
+      flex-direction: column;
+      gap: 30px;
+      margin: 20px 0;
+      text-align: center;
+  }
+
+  .footer-links div {
+      text-align: center;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+
+  .social-icons {
+      justify-content: center;
+      gap: 20px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .footer-logo img {
+      width: 200px;
+  }
+
+  .footer-links {
+      gap: 20px;
+      text-align: center;
+  }
+
+  .footer-links h4 {
+      font-size: 14px;
+  }
+
+  .footer-links li {
+      font-size: 12px;
+  }
+
+  .footer-bottom p {
+      font-size: 12px;
+  }
+
+  .social-icons {
+      gap: 15px;
+  }
+
+  .social-icons svg {
+      font-size: 18px;
+  }
+}

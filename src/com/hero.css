@@ -1,0 +1,173 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Hero Content */
+.hero-content {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/img/bg.png');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -200px;
+}
+
+/* Hero Text */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  background: white;
+  color: black;
+}
+
+/* Cards Container */
+.Hcards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Hero Cards */
+.Hcards-container .Hcard {
+  background: white;
+  color: black;
+  padding: 20px;
+  text-align: start;
+  border-radius: 0;
+  width: 300px;
+  height: 250px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Icon */
+.Hcard .icon {
+  font-size: 2rem;
+  margin-bottom: 1px;
+}
+
+.Hcard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.Hcard p {
+  font-size: 1rem;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .hero {
+      height: auto;
+      padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+      font-size: 2.5rem;
+      margin-top: 50px;
+  }
+
+  .hero-content p {
+      font-size: 1rem;
+      padding: 0 20px;
+  }
+
+  .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .Hcards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .Hcards-container .Hcard {
+      width: 90%;
+      max-width: 350px;
+      height: auto;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 2rem;
+      margin-top: 40px;
+  }
+
+  .hero-content p {
+      font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+      flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-outline {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+
+  .Hcards-container .Hcard {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .Hcard h2 {
+      font-size: 1.3rem;
+  }
+
+  .Hcard p {
+      font-size: 0.9rem;
+  }
+}

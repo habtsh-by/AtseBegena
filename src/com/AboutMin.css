@@ -1,0 +1,128 @@
+/* ========== Hero Section Styles ========== */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.text-content {
+    max-width: 48%;
+    margin-right: 20px;
+}
+
+.blue-line {
+    width: 50px;
+    height: 5px;
+    background-color: #1e40af;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.learn-more {
+    color: #1e40af;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    text-align: right;
+    margin-right: 80px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 450px;
+    height: 550px;
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Tablet and Smaller Screens */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 30px;
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center;
+    }
+
+    .text-content {
+        max-width: 100%; /* Full width for text content */
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image-container {
+        text-align: center;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        max-width: 350px;
+        height: auto; /* Allow the image to scale proportionally */
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .learn-more {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding: 20px;
+    }
+
+    .text-content {
+        max-width: 100%; /* Full width for text content */
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .image-container img {
+        max-width: 300px; /* Smaller image on mobile */
+        height: auto;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .learn-more {
+        font-size: 13px;
+    }
+}

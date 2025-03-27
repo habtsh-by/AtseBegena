@@ -1,0 +1,41 @@
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EEEFFF; /* Light grayish-blue background */
+    padding: 20px 80px;
+    border-radius: 8px;
+}
+
+.cta-text {
+    max-width: 600px;
+}
+
+.cta-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.cta-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+.cta-button1 {
+    border: 1px solid #1e40af; 
+    color: #1e40af;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-button1:hover {
+    background: #1e40af;
+    color: white;
+}

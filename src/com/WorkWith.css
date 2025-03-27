@@ -1,0 +1,53 @@
+.companies-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin: 4px;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+/* Company Logo Styling */
+.company-logo {
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.company-logo:hover {
+  filter: grayscale(0%);
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .companies-container {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .company-logo {
+    width: 80px;
+    height: 35px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .companies-container {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .company-logo {
+    width: 70px;
+    height: 30px;
+  }
+}

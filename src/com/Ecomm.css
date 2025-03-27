@@ -1,0 +1,231 @@
+
+
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .cart-icon {
+    position: relative;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .cart-icon span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+  }
+  
+  /* Products Section (Masonry Layout like Pinterest) */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible columns */
+    gap: 20px;
+    grid-auto-rows: 1fr; /* Ensures that the grid will adjust row heights */
+  }
+  
+  .product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;  /* Adjust height to maintain Pinterest-like feel */
+    object-fit: cover;  /* Ensures the image covers the space without distorting */
+    border-radius: 8px;
+  }
+  
+  .product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .product p {
+    font-size: 16px;
+    color: #28a745;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Cart Section */
+  .cart {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart ul li button {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .cart ul li button:hover {
+    background-color: #c82333;
+  }
+  
+  .cart .empty-cart {
+    font-size: 18px;
+    color: #999;
+  }
+  
+  /* Order Form */
+  .order-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .order-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .order-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .order-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .products {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    .cart-icon {
+      font-size: 30px;
+    }
+  
+    input[type="text"] {
+      width: 200px;
+    }
+  
+    .order-form button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .products {
+      grid-template-columns: 1fr;
+    }
+  
+    .product img {
+      max-height: 250px; /* Adjust image size for mobile view */
+    }
+  
+    .cart-icon {
+      font-size: 30px;
+    }
+  
+    .order-form input {
+      padding: 10px;
+    }
+  
+    .order-form button {
+      font-size: 16px;
+    }
+  }
+  
